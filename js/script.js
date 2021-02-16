@@ -1,7 +1,7 @@
 
 let secretNumber = Math.trunc(Math.random() * 100 + 1);
 
-let score = 10;
+let score = 3;
 
 let highScore = document.querySelector('.currentHighScore').textContent = 0;
 

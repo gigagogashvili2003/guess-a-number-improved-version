@@ -74,6 +74,7 @@ let data = document.querySelector('.geo').addEventListener('click', function () 
         document.querySelector('.guess').placeholder = 'ჩაწერე რიცხვი';
         document.querySelector('.play-again').textContent = 'ხელახლა';
         document.querySelector('.check-number').textContent = 'შემოწმება';
+        document.querySelector('.check-number').style.fontSize = '15px';
         document.querySelector('.start-guessing').textContent = 'დაიწყე გამოცნობა';
         document.querySelector('.score').innerHTML =
         '<div class="lets-start score"><h3>სიცოცხლე:</h3><h3 class="score-margin currentScore">10</h3><i class="fas fa-heart"></i></div>';

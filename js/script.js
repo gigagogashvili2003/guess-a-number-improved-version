@@ -3,6 +3,8 @@ const secretNumber = Math.trunc(Math.random() * 100 + 1);
 
 let score = 10;
 
+let highScore = document.querySelector('.currentHighScore').textContent = 0;
+
 
 
 document.querySelector('.currentScore').textContent = score;
@@ -23,6 +25,9 @@ document.querySelector('.check-number').addEventListener('click', function () {
         document.querySelector('.lets-start').style.color = 'lightgreen';
         document.querySelector('.currentHighScore').textContent = score;
         document.querySelector('.container').style.backgroundColor = 'green';
+        if(score > highScore){
+            document.querySelector('.currentHighScore').textContent = score;
+        }
 
     }else if (guess > secretNumber) {
         if(score > 1){

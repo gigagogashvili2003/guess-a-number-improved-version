@@ -99,6 +99,25 @@ input::placeholder {
     text-align: center;
     font-size: 18px;    
 }
+.play-again-block {
+    display: flex;
+}
+.play-again {
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+}
+.play-again:focus {
+    outline:  none;
+}
 .writing-numben {
     width: 300px;
     margin-left: 350px;
@@ -116,7 +135,7 @@ input::placeholder {
     font-size: 20px;
     font-family: 'Poppins',sans-serif;
     color: red;
-    margin-left: 75px;
+    
 }
 
 .check-number:focus {
@@ -198,11 +217,12 @@ input::placeholder {
         width: 200px;
         height: 60px;
     }
-    .check-number {
+    .check-number,
+    .play-again {
         width: 100px;
         height: 30px;
-        margin-left: 50px;
     }
+    
     .writing-numben {
         margin-right: 0px;
     }
@@ -227,12 +247,23 @@ input::placeholder {
         width: 150px;
         height: 40px;
     }
-    .check-number {
+    .check-number,
+    .play-again {
         font-size: 15px;
         width: 60px;
     }
+    .play-again {
+        margin-right: 30px;
+    }
     .writing-numben {
         margin-left: 310px;
+    }
+}
+
+@media (max-width: 432px){
+    .lets-start {
+        margin-left: -50px;
+        font-size: 13px;
     }
 }
 

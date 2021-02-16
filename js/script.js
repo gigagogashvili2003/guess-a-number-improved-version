@@ -22,6 +22,7 @@ document.querySelector('.check-number').addEventListener('click', function () {
         document.querySelector('.lets-start').textContent = 'OMG 😱 a number is correct!✅'
         document.querySelector('.lets-start').style.color = 'lightgreen';
         document.querySelector('.currentHighScore').textContent = score;
+        document.querySelector('.container').style.backgroundColor = 'lightgreen';
 
     }else if (guess > secretNumber) {
         if(score > 1){

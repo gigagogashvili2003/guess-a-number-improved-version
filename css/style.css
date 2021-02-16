@@ -37,6 +37,10 @@
     color: #d20a0a;
 }
 
+button {
+    margin-left: 75px;
+}
+
 .choose-number {
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -44,7 +48,7 @@
     font-size: 15px;
     letter-spacing: 3px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 40px;
 }
 .horizontal-line {
     width: 100%;
@@ -76,6 +80,9 @@ input {
 }
 .fa-heart {
     color: #ff3333;
+}
+.score {
+    display: flex;
 }
 
 .currentScore,
@@ -174,6 +181,16 @@ input::placeholder {
 .score-margin {
     margin-left: 20px;
 }
+.geo {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 auto;
+    color: pink;
+}
 
 
 /* media */
@@ -221,6 +238,7 @@ input::placeholder {
     .play-again {
         width: 100px;
         height: 30px;
+        margin-left: 50px;
     }
     
     .writing-numben {
@@ -249,8 +267,7 @@ input::placeholder {
     }
     .check-number,
     .play-again {
-        font-size: 15px;
-        width: 60px;
+        margin-left: 30px;
     }
     .play-again {
         margin-right: 30px;
@@ -266,5 +283,7 @@ input::placeholder {
         font-size: 13px;
     }
 }
+
+
 
 

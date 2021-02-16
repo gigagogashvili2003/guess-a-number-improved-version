@@ -9,7 +9,6 @@ let highScore = document.querySelector('.currentHighScore').textContent = 0;
 
 document.querySelector('.currentScore').textContent = score;
 
-document.querySelector('.question-sign').textContent = secretNumber;
 
 document.querySelector('.check-number').addEventListener('click', function () {
     
@@ -22,6 +21,7 @@ document.querySelector('.check-number').addEventListener('click', function () {
 
     }else if(guess === secretNumber){
         document.querySelector('.lets-start').textContent = 'OMG 😱 a number is correct!✅'
+        document.querySelector('.secret-number-block').textContent = secretNumber;
         document.querySelector('.lets-start').style.color = 'lightgreen';
         document.querySelector('.currentHighScore').textContent = score;
         document.querySelector('.container').style.backgroundColor = 'green';
@@ -42,7 +42,7 @@ document.querySelector('.check-number').addEventListener('click', function () {
         }
     }else if (guess < secretNumber) {
         if(score > 1){
-            document.querySelector('.lets-start').textContent = 'Oops too Low'
+            document.querySelector('.lets-start').textContent = 'Oops too Low😑'
             document.querySelector('.lets-start').style.color = 'red';
             score--;
             document.querySelector('.currentScore').textContent = score;
@@ -56,7 +56,6 @@ document.querySelector('.check-number').addEventListener('click', function () {
 
 document.querySelector('.play-again').addEventListener('click', function () {
     secretNumber = Math.trunc(Math.random() * 100 + 1);
-    document.querySelector('.question-sign').textContent = secretNumber;
     score = 10;
     highScore = document.querySelector('.currentScore').textContent = score;
     document.querySelector('.guess').value = '';
